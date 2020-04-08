@@ -9,6 +9,6 @@ From:ubuntu:18.04
     apt-get clean
     rm -rf /var/lib/apt/lists/*
     # Installing all R packages
-    Rscript -e 'r = getOption("repos"); r["CRAN"] = "https://cran.rstudio.com/"; options(repos = r); install.packages(c("graphics","ggplot2","Matrix","methods","splines","stats","utils","lattice","Formula","ggpubr","survival","survAUC"))' 
+    Rscript -e 'r = getOption("repos"); r["CRAN"] = "https://cran.rstudio.com/"; options(repos = r); install.packages(c("graphics","ggplot2","Matrix","methods","splines","stats","utils","lattice","Formula","ggpubr","survival","survAUC","nricens"))' 
 %test
     R --version
